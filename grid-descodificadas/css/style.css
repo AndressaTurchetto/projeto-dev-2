@@ -66,6 +66,7 @@ img {
     background: var(--cor-hover-intensa);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
