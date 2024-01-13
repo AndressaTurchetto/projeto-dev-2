@@ -34,7 +34,7 @@ body {
   /* Seção inicial com imagem de fundo */
   .secao-background-capa {
     min-height: 500px;
-    background-image: url('img/capa.jpg');
+    background-image: url('../img/capa.jpg');
     background-size: cover;
   }
   .secao-background-conteudo {
