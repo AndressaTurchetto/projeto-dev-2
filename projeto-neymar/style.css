@@ -49,11 +49,9 @@
     width: 200px;
     height: 200px;
     border-radius: 100%;
-
     background-image: url(img/neymar.jpg);
     background-position: center;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +137,6 @@ h1::before {
     width: 30px;
 }
 
-/* Estilo tabela */
 .container-tabela {
     position: relative;
     width: 100%;
@@ -158,7 +155,6 @@ h1::before {
     background-size: cover;
     background-attachment: fixed;
 }
-
 
 .container-tabela h2 {
     color: var(--cor1);
@@ -196,3 +192,4 @@ h1::before {
     font-size: 18px;
     color: #fff;
   }
+  
