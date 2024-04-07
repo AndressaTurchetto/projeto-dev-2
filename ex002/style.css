@@ -1,9 +1,47 @@
+/* Estilização geral */
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização cabeçalho */
+
+header div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .secao-capa {
     background-image: url(img/bg-estacao.jpg);
     width: 100%;
+}
+
+.secao-destaque div {
+    display: flex;
+
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    opacity: 0.6;
+}
+
+.galeria img:hover {
+    opacity: 1;
 }
