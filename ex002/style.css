@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.secao-capa {
+    background-image: url(img/bg-estacao.jpg);
+    width: 100%;
+}
