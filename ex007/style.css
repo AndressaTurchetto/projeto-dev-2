@@ -1,13 +1,15 @@
+@charset "UTF-8";
+/* Estilo Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte-segunda-secao);
+    font-family: var(--fonte-primeira-secao);
 }
 
 :root {
-    --fonte-primeira-secao: font-family: 'Montserrat', sans-serif;
-    --fonte-segunda-secao: 'Ysabeau Infant', sans-serif;
+    --fonte-primeira-secao: 'Ysabeau Infant', sans-serif;
+    --fonte-segunda-secao: font-family: 'Montserrat', sans-serif;
     --cor1: #fff;
     --cor2: #ffffffcc;
     --cor3:#000000;
@@ -17,13 +19,16 @@
     --cor7: #009c3b;
 }
 
-.banner-video {
+.container-video {
     width: 100%;
     height: 100vh;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.banner-video video {
+.container-video video {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -31,61 +36,165 @@
     object-fit: cover;
 }
 
-.banner-foto-perfil {
+.container-info {
+    width: 768px;
     display: flex;
-    
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
-.banner-foto-perfil img {
+/* Estilo imagem perfil */
+.container-perfil {
     width: 200px;
     height: 200px;
-    padding-bottom: 20px;
-    border-radius: 80%;
-    border: 4px solid black;
-}
+    border-radius: 100%;
 
-.container-info {
-    padding-bottom: 40px;
-}
+    background-image: url(img/neymar.jpg);
+    background-position: center;
+    background-size: cover;
 
-.limita-secao {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.banner-titulo {
+.container-perfil::before {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.container-info h1 {
+    position: relative;
+    font-size: 50px;
     color: var(--cor1);
-    font-weight: 700;
-    font-size: 34px;
+    text-shadow: 2px 6px 3px #000000;
 }
 
-.banner-links {
-    display: flex;
-    flex-direction: column; 
+h1::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    bottom: 2px;
+    left: 5px;
+    border-radius: 4px;
 }
 
-.banner-links a {
-    text-align: center;
-    text-decoration: none;
-    color: var(--cor1);
-    background-color: var(--cor5);
-    padding: 5px 80px;
-    border-radius: 5px;
-    line-height: 25px;
-    margin-bottom: 10px;
-}
-
-.banner-links img {
+.container-info h1::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    right: -20px;
+    background-image: url(img/verificado.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
 }
 
-.banner-foto-fundo {
-    background-image: url();
+.container-links {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
 }
+
+.container-links a {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    text-align: center;
+    gap: 5px;
+
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 20px;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+.container-links a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+
+.container-links a p {
+    width: 90%;
+}
+
+.container-links a img {
+    width: 30px;
+}
+
+/* Estilo tabela */
+.container-tabela {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    font-family: var(--fonte-segunda-secao);
+
+    background-image: url(img/imagem-de-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container-tabela h2 {
+    color: var(--cor1);
+    text-shadow: 3px 6px 1px #000000;
+    font-size: 74px;
+}
+
+.tabela th {
+    font-size: 26px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela th, tr, td {
+    padding: 20px;
+}
+
+.tabela tbody td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.tabela tbody tr:nth-of-type(odd) {
+    background-color: #ffffffcc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #000000cc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
