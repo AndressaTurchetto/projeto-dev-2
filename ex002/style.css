@@ -17,6 +17,10 @@ header div{
     padding: 10px 15px;
 }
 
+header img {
+    
+}
+
 nav a {
     margin-right: 20px;
     text-decoration: none;
@@ -63,7 +67,6 @@ nav a {
 .limita-secao {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 25px 0 25px 0;
 }
 
 .galeria {
