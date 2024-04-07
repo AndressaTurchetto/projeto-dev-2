@@ -23,10 +23,37 @@ nav a {
     color: black;
 }
 
+/* Estilização banner */
+
 .secao-capa {
     background-image: url(img/bg-estacao.jpg);
     width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    background-attachment: fixed;
+    
+
+    /* Centralizar o texto */
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
+
+.secao-conteudo-capa {
+    flex-direction: column;
+    text-align: center;
+}
+
+.secao-conteudo-capa h1 {
+    font-size: 32px;
+}
+
+.secao-conteudo-capa h2 {
+    font-size: 18px;
+}
+
 
 .secao-destaque div {
     display: flex;
