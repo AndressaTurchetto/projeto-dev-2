@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --cor-branca: #ffffff;
+    --cor-preta: #000;
+    --cor-background: #3b2424;
+    --cor-id-pontos: #e9e9e9;
+    --cor-footer: #f5c002;
+}
+
 /* Reset CSS*/
 * {
     margin: 0;
@@ -21,12 +29,12 @@ section {
     padding: 60px 20px;
 }
 
-/* Estilização cabeçalho */
+/* Estilos do cabeçalho */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--cor-branca);
     z-index: 1000; /* Isso garante que o cabeçalho fique acima de outros elementos na página */
     padding: 10px 0;
 }
@@ -38,7 +46,7 @@ header img {
 header a {
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--cor-preta);
     font-size: 18px;
     padding: 5px;
 }
@@ -66,7 +74,7 @@ header div{
     content: "";
     width: 100%;
     height: 100%;
-    background: #3b2424;
+    background: var(--cor-background);
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -87,8 +95,8 @@ header div{
 /* Estilos conteúdo do Banner */
 .secao-conteudo-capa h1, .secao-conteudo-capa h2 {
     text-align: center;
-    color: #ffffff;
-    text-shadow: 1px 1px 5px #000000;
+    color: var(--cor-branca);
+    text-shadow: 1px 1px 5px var(--cor-preta);
 }
 
 .secao-conteudo-capa h1 {
@@ -110,7 +118,7 @@ header div{
 }
 
 #pontos {
-    background: #e9e9e9;
+    background: var(--cor-id-pontos);
 }
 
 /* Estilos gerais de parágrafos e títulos */
@@ -174,7 +182,7 @@ footer {
     display: flex;
     width: 100%;
     height: 50px;
-    background: #f5c002;
+    background: var(--cor-footer);
     justify-content: center;
     align-items: center;
 }
