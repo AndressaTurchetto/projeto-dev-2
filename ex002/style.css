@@ -44,6 +44,7 @@ nav a {
 .secao-conteudo-capa {
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
 .secao-conteudo-capa h1 {
@@ -54,10 +55,15 @@ nav a {
     font-size: 18px;
 }
 
-
 .secao-destaque div {
     display: flex;
 
+}
+
+.limita-secao {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
 }
 
 .galeria {
