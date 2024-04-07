@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-primeira-secao: font-family: 'Montserrat', sans-serif;
+    --fonte-segunda-secao: 'Ysabeau Infant', sans-serif;
+    --cor1: #fff;
+    --cor2: #ffffffcc;
+    --cor3:#000000;
+    --cor4: #000000cc;
+    --cor5;#0200006e;
+    --cor6: #ffdf00;
+    --cor7: #009c3b;
+}
+
+.banner-video {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-foto-perfil {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+.container-info {
+    padding-bottom: 40px;
+}
