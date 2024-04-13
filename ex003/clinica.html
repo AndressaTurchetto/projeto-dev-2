@@ -6,34 +6,49 @@
     <title>Clinica</title>
 </head>
 <body>
+    <!-- Primeira seção -->
     <header class="container-topo">
-        <div class="container-logo">
-            <img class="imagem-logo" src="img/logo.png" alt="Imagem da Logo">
+        <div class="container-topo-itens">
+            <div class="container-logo-imagem">
+                <img src="img/logo.png" alt="Imagem da Logo">
+            </div>
+            <nav class="container-menu">
+                <a href="#">Sobre</a>
+                <a href="especialidades.html">Especialidades</a>
+                <a href="#">Contato</a>
+            </nav>
         </div>
-        <div class="titulo-logo">
-            <h1>Life</h1>
-        </div>
-        <nav class="container-menu">
-            <span id="sobre">Sobre</span>
-            <span id="especialidade">Especialidades</span>
-            <span id="contato">Contato</span>
-        </nav>
     </header>
+
+    <!-- Segunda seção -->
     <main class="container-conteudo-principal">
         <div class="container-banner">
-            <img src="img/recepcao.png" alt="Imagem Banner da recepção">
-            <h2 class="container-titulo-banner">
-                CLÍNICA MÉDICA LIFE AQUI A GENTE CUIDA DE VOCÊ
-            </h2>
+        <!-- Aqui vai background-img -->
+            <div class="container-titulo-banner">
+                <h1>
+                    CLÍNICA MÉDICA LIFE AQUI A GENTE CUIDA DE VOCÊ
+                </h1>
+            </div>
         </div>
+
+        <!-- Terceira seção -->
         <div class="container-sobre" #sobre>
+
+            <!-- Container Info -->
             <div class="container-info">
-                <h3>Sobre a clínica</h3>
+                <h2>Sobre a clínica</h2>
                 <p>Nossa clinica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisa.</p>
             </div>
+
+            <!-- Container lista -->
             <div class="container-lista">
-                <h4> AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR: </h4>
+
+                <!-- Imagem de um médico a esquerda -->
+                <div class="container-imagem-medico">
+                    <img src="#" alt="Imagem de um médico">
+                </div>
                 <div class="lista">
+                    <h3> AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR: </h3>
                     <ul>
                         <li>Horário flexível. Atendemos de segunda à sabado.</li>
                         <li>Estacionamento amplo com 600 vagas.</li>
@@ -45,13 +60,50 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-conteudo-cards container-sobre">
+                <!-- Container Info -->
+            <div class="container-info">
+                <h2>Uma clínica de multiespecialidade</h2>
+                <p>Nossa clinica possui diversas especialidades. Como ortopedia, pediatra, geriatria, psicologia, fisioterapia e outros.</p>
+            </div>
+
+                   <!-- Aqui vai tres cards -->
+            <div class="container-cards">
+                    
+                <img src="img/ortopedia1.png" alt="Imagem Ortopedia 1">
+                    ORTOPEDIA
+                <img src="img/pediatra.png" alt="Imagem pediatra">
+                    PEDIATRIA
+                <img src="img/geriatra.png" alt="Imagem geriatra">
+                    GERIATRIA
+            </div>
+            <div class="botao">
+                <a href="especialidades.html">VER HORÁRIOS</a>
+            </div>
+        </div>
+        <div class="container-contato">
+            <div class="container-info">
+                <h2>Contato</h2>
+                <p>Nossa clínica médica está aberto de <span>segunda à sábado das 6:00 às 21:00</span></p>
+                <p>Através do telefone/WhatsApp <span>(21) 99966-5555</span> você pode fazer o agendamento de consultas e exames.</p>
+                <p>Estamos localizados no estacionamento do Via Parque Shopping <span>av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro.</span></p>
+            </div>
+            <div class="container-mapa">
+                <!-- Aqui vai o mapa -->
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container-rodape">
-            <img src="img/logo.png" alt="Imagem da Logo">
-            <p>Telefone e WhatsApp: (21) 99966-5555</p>
-            <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
-            <p>Clínica Médica Life - Todos os direitos reservados</p>
+            <div class="container-logo-rodape">
+                <img src="img/logo.png" alt="Imagem da Logo">
+            </div>
+            <div class="container-info-rodape">
+                <p>Telefone e WhatsApp: (21) 99966-5555</p>
+                <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
+                <p>Clínica Médica Life - Todos os direitos reservados</p>
+            </div>
         </div>
     </footer>
     
