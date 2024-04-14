@@ -1,15 +1,3 @@
-Vídeos da sessão vídeos:
-
-        <li class="videos__item">
-            <iframe width="100%"  height="72%" src="https://www.youtube.com/embed/pA-EgOaF23I" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/Ellipse 11.png" alt="Logo do canal Alura Cursos Online">
-                <h3>Qual é o melhor hardware para programação com Mario Souto</h3>
-                <p>236 mil visualizações - Há 8 dias</p>
-            </div>
-        </li>
         <li class="videos__item">
             <iframe width="100%"  height="72%" src="https://www.youtube.com/embed/OrnUhR41MYI"
                 title="Voltando ao mercado após a maternidade: Ana Silvério" frameborder="0"
