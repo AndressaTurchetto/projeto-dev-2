@@ -1,1 +1,27 @@
+@charset "UTF-8";
 
+/* Reset das configurações */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento pai do cabeçalho */
+.cabecalho__container {
+    /* Colocando os elementos lado a lado */
+    display: flex;
+    /* Colocando os elementos com ajustados */
+    justify-content: space-between;
+    /* Fixar no centro */
+    align-items: center;
+    /* FIxar o cabeçalho no top 0 */
+    position: fixed;
+    top: 0;
+}
+
+@media (min-width: 834px) {
+    .cabecalho__pesquisar__item {
+        /* Para esconder o pesquisar quando telas menores */
+        
+    }
+}
