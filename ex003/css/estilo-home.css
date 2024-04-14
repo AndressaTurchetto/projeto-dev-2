@@ -12,7 +12,21 @@ body {
 
 :root {
     --cor-fonte: #0000008c;
+    --cor-branca: #fff;
 
     --fonte: 'Source Sans Pro';
 }
 
+limita-secao {
+    max-width: 1024px;
+}
+
+.container-menu {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.container-menu a {
+    color: var(--cor-branca);
+    text-decoration: none;
+}
