@@ -6,6 +6,8 @@
     padding: 0;
 }
 
+/* CABEÇALHO */
+
 /* Elemento pai do cabeçalho */
 .cabecalho__container {
     /* Colocando os elementos lado a lado */
@@ -19,9 +21,41 @@
     top: 0;
 }
 
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+/* SUPERIOR SEÇÃO */
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    /* Formatar meu texto */
+    white-space: nowrap;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    /* Para quebrar as colunas */
+    flex-wrap: wrap;
+}
+
 @media (min-width: 834px) {
+
+    /* CABEÇALHO */
+
     .cabecalho__pesquisar__item {
         /* Para esconder o pesquisar quando telas menores */
-        
+        display: block;
+    }
+
+    /* RODAPE */
+
+    .rodape__container {
+        /* Aplicar espaçamento */
+        justify-content: space-between;
     }
 }
