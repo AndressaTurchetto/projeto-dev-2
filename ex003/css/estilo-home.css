@@ -1,13 +1,15 @@
 @charset "UTF-8";
+
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
-    max-width: 1024px;
-
-    
+    box-sizing: border-box;
+    max-width: 1024px; 
 }
 
 body {
+    font-family: var(--fonte);
 }
 
 :root {
@@ -17,8 +19,12 @@ body {
     --fonte: 'Source Sans Pro';
 }
 
-limita-secao {
+.limita-secao {
     max-width: 1024px;
+}
+
+header {
+    width: 100%;
 }
 
 .container-menu {
@@ -29,4 +35,11 @@ limita-secao {
 .container-menu a {
     color: var(--cor-branca);
     text-decoration: none;
+}
+
+.container-banner {
+    background-image: url(../img/recepcao.png);
+    width: 100%;
+    
+
 }
