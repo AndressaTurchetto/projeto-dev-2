@@ -3,3 +3,12 @@
 #contato {
   padding: 40px 20px 0;
 }
+
+.container-banner {
+    position: relative;
+    background-image: url('../img/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
