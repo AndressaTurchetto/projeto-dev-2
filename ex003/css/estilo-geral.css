@@ -4,7 +4,7 @@
 :root {
     --cor-fonte: #0000008c;
     --cor-branca: #fff;
-    --fonte: 'Source Sans Pro';
+    --fonte: 'Source Sans Pro', sans-serif;
     --cor-destaque: #00cad1;
     --cor-hover: #004b4c;
     --cor-footer: #0d6e71;
@@ -78,8 +78,6 @@ main {
 /* Configuração links do menu */
 .menu {
     display: flex;
-    padding: 10px;
-    margin-left: 15px;
 }
 
 .menu-links {
@@ -98,14 +96,14 @@ main {
         flex-direction: column;
     }
 
+    .topo-titulo {
+        margin: 10px 0;
+    }
+
     .menu-links {
         width: 100%;
         border-top: 1px solid #009fa5;
         justify-content: space-around;
-    }
-
-    .topo-titulo {
-        margin: 10px 0;
     }
 }
 
@@ -115,6 +113,7 @@ footer {
     color: var(--cor-branca);
     padding: 20px;
   }
+  
   footer .container {
     text-align: center;
   }
