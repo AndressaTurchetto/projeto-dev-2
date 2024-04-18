@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.secao-especialidade {
+    margin-top: 40px;
+}
+
+.container-info {
+    padding: 0 20px;
+}
+
+.tabela {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+
+.tabela thead tr {
+    background-color: #00cad1;
+    color: #fff;
+}
+
+.tabela tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabela tbody tr:hth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+
+.tabela th, .tabela td {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .tabela {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+
+}
