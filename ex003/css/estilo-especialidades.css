@@ -11,6 +11,42 @@
     padding: 0 20px;
 }
 
+.container-links-especialidades {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.links-especialidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link-especialidades {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #00cad1;
+    margin: 0 10px 10px;
+    font-size: 18px;
+}
+
+.link-especialidade:hover{
+    color: #0d6e71;
+  }
+
+.container-tabela {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+}
+
+.container-tabela img {
+    width: 30%;
+    height: 100%;
+}
+
 .tabela {
     border-spacing: 0;
     text-align: left;
@@ -39,11 +75,22 @@
 }
 
 @media (max-width: 768px) {
+    .container-tabela img  {
+        display: none;
+    }
+
     .tabela {
         width: 100%;
+    }
+
+    .container-tabela {
+        height: auto;
+        justify-content: center;
     }
 }
 
 @media (max-width: 425px) {
-
+    .container-tabela {
+        padding: 0;
+    }
 }
