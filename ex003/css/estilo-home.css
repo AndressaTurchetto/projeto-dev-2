@@ -4,7 +4,7 @@
 :root {
     --cor-fonte: #0000008c;
     --cor-branca: #fff;
-    --fonte: 'Source Sans Pro';
+    --fonte: 'Source Sans Pro', sans-serif;
     --cor-destaque: #00cad1;
     --cor-hover: #004b4c;
     --cor-footer: #0d6e71;

@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+/* Cores e fontes */
+:root {
+    --cor-fonte: #0000008c;
+    --cor-preta: #000;
+    --cor-branca: #fff;
+    --fonte: 'Source Sans Pro', sans-serif;
+    --cor-destaque: #00cad1;
+    --cor-hover: #004b4c;
+    --cor-footer: #0d6e71;
+    --cor-fundo-tabela: #cdcdcd;
+    --cor-tabela: #585757;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,14 +41,14 @@
 
 .link-especialidade {
     text-decoration: none;
-    color: #000;
-    border-bottom: 2px solid #00cad1;
+    color: var(--cor-preta);
+    border-bottom: 2px solid var(--cor-destaque);
     margin: 0 10px 10px;
     font-size: 18px;
 }
 
 .link-especialidade:hover{
-    color: #0d6e71;
+    color: var(--cor-hover);
   }
 
 .container-tabela {
@@ -57,19 +70,19 @@
 }
 
 .tabela thead tr {
-    background-color: #00cad1;
-    color: #fff;
+    background-color: var(--cor-destaque);
+    color: var(--cor-branca);
 }
 
 .tabela tr {
-    background-color: #f1f1f1;
-    color: #585757;
+    background-color: var(--cor-branca);
+    color: var(--cor-tabela);
     font-weight: 500;
 }
 
 .tabela tbody tr:hth-of-type(2n+1) {
-    background-color: #cdcdcd;
-    border: 1px solid #f1f1f1;
+    background-color: var(--cor-fundo-tabela);
+    border: 1px solid var(--cor-branca);
 }
 
 .tabela th, .tabela td {
