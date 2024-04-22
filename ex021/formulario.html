@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário Faculdade</title>
 </head>
 <body>
@@ -10,25 +11,36 @@
         <span>Faculdade</span>
     </header>
     <main>
-        <h1>Matricula</h1>
+        <h1>Matrícula</h1>
         <p>
             Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.
         </p>
         <form action="">
-            <label for="">Nome</label>
+            <label>Nome:</label>
             <input type="text" name="nome" id="nome">
         
-            <label for="">Data de Nascimento</label>
+            <label>Data de Nascimento:</label>
             <input type="date" name="nasc" id="nasc">
 
-            <label for="Email"></label>
+            <label>Email:</label>
             <input type="email" name="email" id="email">
 
-            <label for="">Telefone:</label>
+            <label>Telefone:</label>
             <input type="tel" name="tel" id="tel">
 
+            <label>Melhor dia para vencimento:</label>
+            <input type="number" name="venc" id="venc">
 
+            <label>Login:</label>
+            <input type="text" name="login" id="login">
+
+            <label for="">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <button type="submit">Enviar Matrícula</button>
         </form>
     </main>
+    <footer>
+        Copyright 2024 - Desenvolvido por Andressa Turchetto
+    </footer>
 </body>
 </html>
