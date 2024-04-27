@@ -22,28 +22,39 @@
         <section class="orcamento-fundo">
             <div class="orcamento-area limita-largura">
                 <div class="orcamento-cabecalho">
-                    <img src="img/aviao.png" title="Ícone do avião" alt="Ícone do avião">
+
+                    <img class="orcamento-logo"  src="img/aviao.png" title="Ícone do avião" alt="Ícone do avião">
+
                     <h1>Solicite um orçamento</h1>
+
                 </div>
+
                 <div class="orcamento-area-formulario">
+
                     <h2 class="orcamento-subtitulo-formulario">Informe seus dados</h2>
+
                     <form method="post" class="formulario" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
                     ">
-                        <label>Nome:</label>
-                        <input type="text" name="nome" placeholder="Nome completo" required minlength="3" maxlength="60" id="nome">
-                        <label>Email:</label>
-                        <input type="email" name="email" placeholder="Email para contato" required id="email">
-                        <label>Celular</label>
-                        <input type="tel" name="celular" placeholder="(XX) XXXXX-XXXX" required id="celular" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required minlength="3" maxlength="60" id="nome">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email para contato" required id="email">
+
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required id="celular" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+
                         <div class="formulario-campo-duplo">
+
                             <div>
-                                <label>Data da ida:</label>
-                                <input type="date" name="data-ida" placeholder="XX/XX/XXXX" required id="data-ida">
+                                <label for="ida">Data da ida</label>
+                                <input id="ida" type="date" name="partida">
                             </div>
                             <div>
-                                <label>Data da volta:</label>
-                                <input type="date" name="data-volta" placeholder="XX/XX/XXXX" required id="data-volta">
+                                <label for="volta">Data da volta</label>
+                                <input id="volta" type="date" name="chegada">
                             </div>
+                            
                         </div>
                         <div class="formulario-campo-duplo">
                             <div>
