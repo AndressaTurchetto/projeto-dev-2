@@ -6,6 +6,132 @@
     <title>Formulários</title>
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
+    <header>
+
+        <div>
+            <img src="img/local-logo.png" alt="Logo local">
+            <p>Agência de Viagens</p>
+        </div>
+
+    </header>
+    <main>
+        <!-- Aqui vai o formulário -->
+        <section>
+            <h1>Solicite um orçamento</h1>
+
+            <legend>Informe seus dados</legend>
+            <!-- Backend -->
+            <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
+            ">
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Nome completo" required minlength="3" maxlength="60" id="nome">
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email para contato" required id="email">
+                
+                <label>Celular</label>
+                <input type="tel" name="celular" placeholder="(XX) XXXXX-XXXX" required id="celular">
+                
+                <label>Data da ida:</label>
+                <input type="date" name="data-ida" placeholder="XX/XX/XXXX" required id="data-ida">
+                
+                <label>Data da volta:</label>
+                <input type="date" name="data-volta" placeholder="XX/XX/XXXX" required id="data-volta">
+                
+                <label>Origem:</label>
+                
+                <label>Destino:</label>
+
+                <label>Quarto com cama infantil?</label>
+                
+                <label>Preferências da hospedagem:</label>
+
+
+                <button type="submit">Solicitar orçamento</button>
+            </form>
+        </section>
+
+        <!-- Conteúdo principal - Ofertas -->
+
+        <section>
+            <h2>Ofertas</h2>
+            <h3>Com até 50% de desconto</h3>
+            <div class="agrupamento-imagens">
+                <div class="elemento-de-agrupamento">
+                    <img src="img/rio.jpg" alt="Rio de Janeiro">
+                    <p>Rio de Janeiro</p>
+                </div>
+                <div class="segundo-elemento-de-agrupamento">
+                    <div>
+                        <img src="img/manaus.jpg" alt="Manaus">
+                        <p>Manaus</p>
+                    </div>
+                    <div>
+                        <img src="img/niteroi.jpg" alt="Rio de Janeiro">
+                        <p>Rio de Janeiro</p>
+                    </div>
+            
+                    <div>
+                        <img src="img/saopaulo.jpg" alt="São Paulo">
+                        <p>São Paulo</p>
+                    </div>
+            
+                    <div>
+                        <img src="img/maranhao.jpg" alt="Maranhão">
+                        <p>Maranhão</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo principal Anúncios -->
+        <section>
+            <h2>Explore a Natureza</h2>
+            <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
+            <div>
+                <img src="img/lencol.jpg" alt="Lençois Maranhenses">
+
+                <h4>Lençois Maranhenses, Brasil</h4>
+
+                <p>Ida e volta a partir de R$79</p>
+            </div>
+
+            <div>
+                <img src="img/goias.jpg" alt="Cachoeira Santa Bárbara">
+                <h4>Cachoeira Santa Bárbara, Brasil</h4>
+
+                <p>Ida e volta por R$139</p>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div>
+            <h4>Contato</h4>
+            <img src="img/local.png" alt="Icone de localização">
+            <span>Rio de Janeiro, RJ</span>
+
+            <img src="img/telefone.png" alt="Icone de telefone">
+            <span>Telefone: (21) 9999-9999</span>
+
+            <img src="img/email.png" alt="Icone de email">
+            <span>Email: contato@agencia.com.br</span>
+
+        </div>
+
+        <div>
+            <h4>Nossas Redes Sociais</h4>
+            <img src="img/fb.png" alt="Icone do Facebook">
+            <span>/AgenciaDeViagem
+            </span>
+
+            <img src="img/ig.png" alt="Icone do Instagram">
+            <span>@AgenciaDeViagem</span>
+
+            <img src="img/tt.png" alt="Icone do Twitter">
+            <span>@AgenciaDeViagem</span>
+        </div>
+    </footer>
 </body>
 </html>
