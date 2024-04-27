@@ -29,7 +29,7 @@ header {
     height: 32px;
 }
 
-.topo p {
+.topo-titulo {
     font-size: 24px;
     color: #5d15d1;
     margin: 0 0 0 10px;
@@ -150,4 +150,211 @@ header {
     color: #fff;
     margin: 12px 0 0 0;
     cursor: pointer;
+}
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+.ofertas-descricao span {
+    font-weight: bold;
+}
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.oferta-imagem-destaque img, .oferta-quatro-imagens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.natureza-imagem {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.natureza-imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.natureza-imagem div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.natureza-imagem h3 {
+    font-size: 16px;
+}
+
+.natureza-imagem p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+
+footer {
+    width: 100%;
+    background: #5d15d1;
+    margin: 32px 0 0 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.rodape-conteudo h2 {
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.rodape-conteudo div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.rodape-conteudo img {
+    width: 18px;
+}
+
+.rodape-conteudo span {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+
+@media(max-width: 1100px)
+{
+    .limita-largura {
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px)
+{
+   .formulario button {
+        width: 100%;
+    }
+
+    .ofertas-imagens {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .oferta-quatro-imagens {
+        width: 100%;
+    }
+
+    .oferta-imagem-destaque, .oferta-quatro-imagens figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 0 0;
+    }
+
+    .natureza-duas-imagens {
+        flex-direction: column;
+    }
+
+    .natureza-imagem {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-conteudo
+    {
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px)
+{
+    .formulario-campo-duplo, .radio {
+        flex-direction: column;
+    }
+
+    .formulario-campo-duplo div, .radio div {
+        width: 100%;
+    }
 }
