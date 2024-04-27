@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #80808029;
+    display: flex;
+}
+
+header {
+    display: flex;
+    background: #fff;
+}
+
+header img {
+    width: 32px;
+    height: 32px;
+}
+
+header div {
+    width: 100%;
+    align-items: center;
+    max-width: 1024px;
+}
+
+header p {
+    font-size: 24px;
+    color: #5d15d1;
+
+}
+
+.banner {
+    background-image: url(../img/);
+}
