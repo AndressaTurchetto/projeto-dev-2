@@ -80,3 +80,18 @@ function alterarContexto(contexto) {
     })
     html.setAttribute('data-contexto', contexto)
     banner.setAttribute('src', `./imagens/${contexto}.png`)
+
+// Para pegar a música
+const musicaFocoInput = document.querySelector('#alternar-musica')
+const musica = new Audio('/sons/luna-rise-part-one.mp3')
+
+// Para continuar tocando a música 
+musica.loop = true
+
+musicaFocoInput.addEventListener('change', () => {
+    if(musica.paused) {
+        musica.play()
+    } else {
+        musica.pause()
+    }
+})
