@@ -1,20 +1,21 @@
 @charset "UTF-8";
-
-/* Variáveis de cores e fontes */
+/* Color and font variables */
 :root {
-    --cor-fonte: #464646;
-    --cor-de-fundo: #F5F5F5;
-    --cor-de-link: #000;
-    --fonte-principal: 'Raleway', sans-serif;
+    --font-color: #464646;
+    --background-color: #F5F5F5;
+    --link-color: #000;
+    --background-color-highlight: #EAF2FD;
+    --font: 'Raleway', sans-serif;
+    --background-color-cards: #FFFFFF;
+    --color-icons: #2A7AE4;
 }
 
 /* Reset CSS */
-
 body {
-    width: 1440px;
+    max-width: 1024px;
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
+    background-color: var(--background-color);
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -26,18 +27,15 @@ ol, ul,li {
 
 a {
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--link-color);
 }
 
-/* Sessão de Menu */
+/* Menu Session */
 header {
     display: flex;
-
-    
 }
 
 .menu {
-    max-width: 1024px;
     height: 88px;
     padding: 32px 0px 32px 0px;
     justify-content: space-between;
@@ -46,8 +44,6 @@ header {
 }
 
 .menu__logo {
-
-    
     width: 134px;
     height: 24px;
     gap: 8px;
@@ -59,20 +55,16 @@ header {
 .menu__title {
     width: 102px;
     height: 19px;
-
     font-size: 16px;
     font-weight: 700;
     line-height: 18.78px;
     text-align: left;
-
 }
 
 .menu__list {
-    width: Hug (642px)px;
-    height: Hug (19px)px;
+    width: 642px;
+    height: 19px;
     gap: 32px;
-
-
 }
 
 .menu__list ul {
@@ -80,7 +72,6 @@ header {
     width: 642px;
     height: 19px;
     gap: 32px;
-    
 }
 
 .menu__list li {
@@ -91,7 +82,6 @@ header {
     text-align: left;
 }
 
-
 header img {
     width: 24px;
     height: 24px;
@@ -101,27 +91,24 @@ header img {
     display: flex;
 }
 
-
 .title__div {
-    width: Fixed (1,136px)px;
-    height: Hug (368px)px;
+    width: 1024px;
+    height: 368;
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse; /* Inverte a ordem dos elementos */
-  align-items: center;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .title__container {
     width: Fixed (751px)px;
     height: Hug (246px)px;
     gap: 24px;
-
 }
 
 .title__bio {
     width: 751px;
     height: 122px;
-    font-family: Raleway;
     font-size: 52px;
     font-weight: 700;
     line-height: 61.05px;
@@ -131,9 +118,6 @@ header img {
 .title__subsection {
     width: 751px;
     height: 52px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 400;
     line-height: 25.83px;
@@ -144,7 +128,6 @@ header img {
     width: Hug (467px)px;
     height: Hug (24px)px;
     gap: 32px;
-    opacity: 0px;
     display: flex;
 }
 
@@ -152,7 +135,6 @@ header img {
     width: Hug (78px)px;
     height: Hug (24px)px;
     gap: 4px;
-    opacity: 0px;
     display: flex;
     align-items: center;
 }
@@ -166,6 +148,114 @@ header img {
     height: 368px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.about {
+    background: var(--background-color-highlight);
+    width: Fill (1,440px)px;
+    height: Hug (383px)px;
+    padding: 64px 0px 0px 0px;
+    gap: 10px;
+}
+
+.about__container {
+    width: Fixed (1,136px)px;
+    height: Hug (255px)px;
+    gap: 16px;
+}
+
+.about__title {
+    width: 166px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+}
+
+.about__paragraph {
+    width: 751px;
+    height: 133px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+}
+
+.about__container img {
+    width: 140px;
+    height: 52px;
+}
+
+.container {
+    width: 1024px;
+    height: 1024px;
+    gap: 88px;
+}
+
+.skills {
+    width: Hug (1,136px)px;
+    height: Hug (244px)px;
+    gap: 32px;
+}
+
+.cards__title {
+    width: 82px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.skills__line {
+    width: 1024px;
+    height: 174;
+    gap: 16px;
+    display: flex;
+}
+
+.box {
+    width: 176px;
+    height: 174px;
+    padding: 16px 0px 0px 0px;
+    gap: 8px;
+    background-color: var(--background-color-cards);
+    flex: 1; 
+    margin-right: 5px;
+}
+
+.cards__img {
+    width: 32px;
+    height: 32px;
+    color: var(--color-icons);
+}
+
+.icon__name {
+    width: 144px;
+    height: 19px;
+}
+
+.hobbies {
+    width: Hug (1,136px)px;
+    height: Hug (244px)px;
+    gap: 32px;
+}
+
+.hobbies__line {
+    width: Hug (1,136px)px;
+    height: Hug (174px)px;
+    gap: 16px;
+    display: flex;
+}
+
+.hobbies__name {
+    width: 144px;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    text-align: left;
 }
 
 
