@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* Variáveis de cores e fontes */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+/* Reset CSS */
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Menu */
+
+section.menu {
+
+}
+
+/* Title */
+section.title {
+
+}
+
+/* About */
+
+section.about {
+
+}
+
+/* Hobbies */
+section.hobbies {
+
+}
+
+/* Experiência Acadêmica */
+section.academic {
+
+}
+
+/* Contato */
+section.formcontato {
+
+}
+
+/* Footer */
+section.footer {
+
+}
+
+/* Responsividade */
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menu */
+    
+    /*title*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Experiências acadêmicas*/
+    
+    /*Expeirência profissional*/
+    
+    }
+    
+    /*Mobile*/
+    @media (min-width: 425px) {
+    
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sessão sobre*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formação Acadêmica*/
+    
+    /*Experiência Profissional*/
+    
+     /*Contato*/
+    
+    /*Footer*/
+    
+    }
+
