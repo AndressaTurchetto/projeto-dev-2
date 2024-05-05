@@ -11,15 +11,17 @@
 }
 
 /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     max-width: 1024px;
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: var(--font);
-    margin: 0;
-    padding: 0;
     line-height: 1;
-    
 }
 
 ol, ul,li {
@@ -36,10 +38,28 @@ header {
     display: flex;
 }
 
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limita-secao {
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+main {
+
+    padding: 60px 20px;
+}
+
 .menu {
     height: 88px;
     padding: 32px 0px 32px 0px;
-    justify-content: space-between;
     display: flex;
     text-align: center;
 }
@@ -154,7 +174,7 @@ header img {
 
 .about {
     background: var(--background-color-highlight);
-    width: Fill (1,440px)px;
+    width: 1440px;
     height: Hug (383px)px;
     padding: 64px 0px 0px 0px;
     gap: 10px;
@@ -420,256 +440,153 @@ height: Hug (51px)px;
 padding: 16px 0px 0px 0px;
 gap: 10px;
 border: 1px 0px 0px 0px;
-opacity: 0px;
 border: 1px solid #2A7AE4
 }
 
 .experience__button--repo {
     width: 84px;
-height: 19px;
-gap: 0px;
-opacity: 0px;
-font-family: Raleway;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.78px;
-text-align: left;
-
-
+    height: 19px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
 }
 
 .experience__demo {
     width: Hug (105px)px;
-height: Hug (51px)px;
-padding: 16px 0px 0px 0px;
-gap: 10px;
-opacity: 0px;
-background: #2A7AE4;
+    height: Hug (51px)px;
+    padding: 16px 0px 0px 0px;
+    gap: 10px;
+    background: #2A7AE4;
 
 }
 
 .experience__botao--demo {
     width: 73px;
-height: 19px;
-gap: 0px;
-opacity: 0px;
-font-family: Raleway;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.78px;
-text-align: left;
-background: #FFFFFF;
+    height: 19px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+    background: #FFFFFF;
 
 }
 
 /* Contact Session */
 .form {
-    width: Hug (1,440px)px;
-    height: Hug (890px)px;
-    gap: 0px;
-    opacity: 0px;
-    
+    width: 100%;
+    height: 890px;
 }
 
 .form__contacto {
-    width: Fixed (1,440px)px;
-    height: Hug (788px)px;
+    width: 100%;
+    height: 788px;
     padding: 64px 0px 0px 0px;
     gap: 10px;
-    opacity: 0px;
-    background-color: var(--background-color-highlight);    
+    background-color: var(--background-color-highlight);   
+    display: flex; 
 }
 
 .form__contato-left {
-    width: Fixed (1,136px)px;
-height: Hug (660px)px;
-padding: 64px 0px 0px 0px;
-gap: 16px;
-opacity: 0px;
-
+    width: 100%;
+    height: 660px;
+    padding: 64px 0px 0px 0px;
+    gap: 16px;
 }
 
 .form__img {
     width: 464px;
-height: 593px;
-gap: 0px;
-opacity: 0px;
-background: #EDEDED;
-
+    height: 593px;
+    background: #EDEDED;
 }
 
 .form__text {
-    width: Fill (656px)px;
-height: Hug (596px)px;
-gap: 32px;
-opacity: 0px;
-
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form__title {
-    width: Hug (656px)px;
-height: Hug (84px)px;
-gap: 8px;
-opacity: 0px;
-
-}
-
-.form__subtext {
+    width: 656px;
+    height: 84px;
+    gap: 8px;
     width: 123px;
     height: 38px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Raleway;
-font-size: 32px;
-font-weight: 700;
-line-height: 37.57px;
-text-align: left;
-
-}
-
-.form__form {
-    width: Fill (656px)px;
-height: Hug (397px)px;
-gap: 32px;
-opacity: 0px;
-
-
-}
-
-.form__input {
-    width: Fill (656px)px;
-height: Hug (56px)px;
-gap: 8px;
-opacity: 0px;
-width: 656px;
-height: 56px;
-padding: 8px 0px 0px 0px;
-gap: 4px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
-background: #FFFFFF;
-}
-
-.form__textarea {
-    width: Fill (656px)px;
-    height: Hug (133px)px;
-    gap: 8px;
-    opacity: 0px;
-    width: 656px;
-height: 133px;
-padding: 16px 0px 0px 0px;
-gap: 4px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
-background: #FFFFFF;
-
-
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
     
 }
 
-/* 
-Dentro do Input
-Linha:
-width: 656px;
-height: 1px;
-top: 132px;
-gap: 0px;
-opacity: 0px;
-background: #C8C8C8;
+.form__form {
+    width: 656px;
+    height: 397px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
 
-Elementos: 
-width: Fixed (656px)px;
-height: Hug (24px)px;
-top: 16px;
-padding: 0px 12px 0px 12px;
-gap: 0px;
-opacity: 0px;
+input, textarea {
+    background: #FFFFFF;
+    border: 0px solid #C8C8C8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px 0px 0px 0px;
+    gap: 4px;
+    width: 656px;
+}
 
-*/
+.form__input {
+    width: 656px;
+    height: 150px;
+    padding: 8px 0px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.form__textarea {
+    width: 656px;
+    height: 300px;
+    padding: 16px 0px 0px 0px;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    top: 132px;
+    width: 656px;
+    height: 24px;
+    top: 16px;
+    padding: 0px 12px 0px 12px;
+}
 
 .form__btn {
-    width: Hug (165px)px;
-height: Hug (51px)px;
-padding: 16px 0px 0px 0px;
-gap: 10px;
-opacity: 0px;
-background: #2A7AE4;
-width: 133px;
-height: 19px;
-gap: 0px;
-opacity: 0px;
-font-family: Raleway;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.78px;
-text-align: left;
-background: #FFFFFF;
+    background: var(--color-icons);
+    width: 165px;
+    padding: 16px 0px 16px 0px; 
+    border: none;
+}
 
+.form__btn a {
+    color: var(--background-color-cards);
+    width: 133px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 /* Footer Session */
 .footer {
-    width: Fixed (1,440px)px;
-height: Hug (102px)px;
-padding: 32px 0px 0px 0px;
-gap: 10px;
-opacity: 0px;
-background: #FFFFFF;
-
-
-}
-
-.footer__rodape {
-    width: 234px;
-height: 38px;
-gap: 0px;
-opacity: 0px;
-font-family: Raleway;
-font-size: 16px;
-font-weight: 500;
-line-height: 18.78px;
-text-align: center;
-
-
-}
-
-
-/* Menu */
-
-section.menu {
-    
-}
-
-
-/* Title */
-section.title {
-
-}
-
-/* About */
-
-section.about {
-
-}
-
-/* Hobbies */
-section.hobbies {
-
-}
-
-/* Experiência Acadêmica */
-section.academic {
-
-}
-
-/* Contato */
-section.formcontato {
-
-}
-
-/* Footer */
-section.footer {
-
+    width: 100%;
+    height: 102px;
+    padding: 32px 0px 0px 0px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
 }
 
 /* Responsividade */
