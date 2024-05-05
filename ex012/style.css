@@ -189,7 +189,6 @@ header img {
 
 .container {
     width: 1024px;
-    height: 1024px;
     gap: 88px;
 }
 
@@ -257,6 +256,76 @@ header img {
     line-height: 18.78px;
     text-align: left;
 }
+
+/* Academic History Session */
+.academic {
+    width: Fill (1,440px)px;
+    height: Hug (581px)px;
+    padding: 82px 0px 0px 0px;
+    gap: 32px;
+    background-color: var(--background-color-highlight);
+}
+
+.academic__title {
+    width: 330px;
+    height: 38px;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.academic__courses {
+    width: Hug (1,136px)px;
+    height: Hug (347px)px;
+    gap: 16px;
+    display: flex;
+}
+
+.academic__courses__box {
+    width: 368px;
+    height: 347px;
+    gap: 8px;
+    flex: 1;
+  margin-right: 5px;
+}
+
+.academic__courses__list {
+    width: 368px;
+    height: 286px;
+    padding: 16px 0px 0px 0px;
+    gap: 10px;
+    opacity: 0px;
+    background-color: var(--background-color-cards);    
+}
+
+.academic__courses__item__img {
+    width: 192px;
+    height: 130px;
+}
+
+.academic__courses__item__title {
+    width: 181px;
+    height: 26px;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: left;
+
+}
+
+.academic__courses__item__subtitle {
+    width: 92px;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+}
+
+
 
 
 /* Menu */
