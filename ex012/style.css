@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    
 }
 
 ol, ul,li {
@@ -89,6 +90,7 @@ header img {
 
 .title {
     display: flex;
+
 }
 
 .title__div {
@@ -236,14 +238,14 @@ header img {
 }
 
 .hobbies {
-    width: Hug (1,136px)px;
-    height: Hug (244px)px;
+    width: 1024px;
+    height: 244px;
     gap: 32px;
 }
 
 .hobbies__line {
-    width: Hug (1,136px)px;
-    height: Hug (174px)px;
+    width: 1024px;
+    height: 174px;
     gap: 16px;
     display: flex;
 }
@@ -325,7 +327,311 @@ header img {
     text-align: left;
 }
 
+/* Professional Experience Session/Projects */
+.experience {
+    width: Hug (1,136px)px;
+height: Hug (1,886px)px;
+gap: 32px;
+opacity: 0px;
 
+
+}
+
+.experience__section__title {
+    width: 364px;
+height: 38px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 32px;
+font-weight: 700;
+line-height: 37.57px;
+text-align: center;
+
+}
+
+.experience__box {
+    width: Hug (1,136px)px;
+height: Hug (1,816px)px;
+gap: 64px;
+opacity: 0px;
+
+}
+
+.experience__img {
+    width: 752px;
+height: 427px;
+gap: 0px;
+opacity: 0px;
+box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.experience__info {
+    width: Fill (348px)px;
+height: Hug (112px)px;
+gap: 8px;
+opacity: 0px;
+
+
+}
+
+.experience__title {
+    width: 348px;
+height: 26px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 22px;
+font-weight: 700;
+line-height: 25.83px;
+text-align: left;
+
+
+
+}
+
+.experience__text {
+    width: 348px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 500;
+line-height: 18.78px;
+text-align: left;
+
+
+}
+
+.experience__description {
+    width: Fixed (560px)px;
+height: Hug (51px)px;
+gap: 16px;
+opacity: 0px;
+
+}
+
+
+.experience__repo {
+    width: Hug (116px)px;
+height: Hug (51px)px;
+padding: 16px 0px 0px 0px;
+gap: 10px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 1px solid #2A7AE4
+}
+
+.experience__button--repo {
+    width: 84px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.78px;
+text-align: left;
+
+
+}
+
+.experience__demo {
+    width: Hug (105px)px;
+height: Hug (51px)px;
+padding: 16px 0px 0px 0px;
+gap: 10px;
+opacity: 0px;
+background: #2A7AE4;
+
+}
+
+.experience__botao--demo {
+    width: 73px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.78px;
+text-align: left;
+background: #FFFFFF;
+
+}
+
+/* Contact Session */
+.form {
+    width: Hug (1,440px)px;
+    height: Hug (890px)px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.form__contacto {
+    width: Fixed (1,440px)px;
+    height: Hug (788px)px;
+    padding: 64px 0px 0px 0px;
+    gap: 10px;
+    opacity: 0px;
+    background-color: var(--background-color-highlight);    
+}
+
+.form__contato-left {
+    width: Fixed (1,136px)px;
+height: Hug (660px)px;
+padding: 64px 0px 0px 0px;
+gap: 16px;
+opacity: 0px;
+
+}
+
+.form__img {
+    width: 464px;
+height: 593px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+
+}
+
+.form__text {
+    width: Fill (656px)px;
+height: Hug (596px)px;
+gap: 32px;
+opacity: 0px;
+
+}
+
+.form__title {
+    width: Hug (656px)px;
+height: Hug (84px)px;
+gap: 8px;
+opacity: 0px;
+
+}
+
+.form__subtext {
+    width: 123px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+font-size: 32px;
+font-weight: 700;
+line-height: 37.57px;
+text-align: left;
+
+}
+
+.form__form {
+    width: Fill (656px)px;
+height: Hug (397px)px;
+gap: 32px;
+opacity: 0px;
+
+
+}
+
+.form__input {
+    width: Fill (656px)px;
+height: Hug (56px)px;
+gap: 8px;
+opacity: 0px;
+width: 656px;
+height: 56px;
+padding: 8px 0px 0px 0px;
+gap: 4px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+background: #FFFFFF;
+}
+
+.form__textarea {
+    width: Fill (656px)px;
+    height: Hug (133px)px;
+    gap: 8px;
+    opacity: 0px;
+    width: 656px;
+height: 133px;
+padding: 16px 0px 0px 0px;
+gap: 4px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+background: #FFFFFF;
+
+
+    
+}
+
+/* 
+Dentro do Input
+Linha:
+width: 656px;
+height: 1px;
+top: 132px;
+gap: 0px;
+opacity: 0px;
+background: #C8C8C8;
+
+Elementos: 
+width: Fixed (656px)px;
+height: Hug (24px)px;
+top: 16px;
+padding: 0px 12px 0px 12px;
+gap: 0px;
+opacity: 0px;
+
+*/
+
+.form__btn {
+    width: Hug (165px)px;
+height: Hug (51px)px;
+padding: 16px 0px 0px 0px;
+gap: 10px;
+opacity: 0px;
+background: #2A7AE4;
+width: 133px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.78px;
+text-align: left;
+background: #FFFFFF;
+
+}
+
+/* Footer Session */
+.footer {
+    width: Fixed (1,440px)px;
+height: Hug (102px)px;
+padding: 32px 0px 0px 0px;
+gap: 10px;
+opacity: 0px;
+background: #FFFFFF;
+
+
+}
+
+.footer__rodape {
+    width: 234px;
+height: 38px;
+gap: 0px;
+opacity: 0px;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 500;
+line-height: 18.78px;
+text-align: center;
+
+
+}
 
 
 /* Menu */
