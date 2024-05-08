@@ -1,11 +1,17 @@
-let indice_musica = 4;
+import entradaDados from 'readline-sync';
 
-let playlist = [
-    {artista: 'Scandal', musica: 'Sisters'},
-    {artista: 'Silent Siren', musica: 'Alarm'},
-    {artista: 'The Peggies', musica: 'Love trip'},
-    {artista: 'LiSA', musica: 'Rally go Round'}
-]
+let valorDevido = entradaDados.question('Informe o valor devido: ');
+let diasDeAtraso = entradaDados.question('Informe quantos dias se passaram desde o vencimento do boleto: ');
 
-console.log("Artista:"+playlist[indice_musica].artista);
-console.log("Música:"+playlist[indice_musica].musica);
+console.log('Valor original da dívida: '+valorDevido)
+console.log('Dias atrasados'+diasDeAtraso)
+
+let valorDivida = valorDevido;
+let juros = 10;
+
+let valorJuros = (valorDivida / 100) * juros;
+let totalDivida = valorDivida + valorJuros;
+
+console.log(totalDivida);
+
+
