@@ -3,13 +3,12 @@ let funcionarios = [
     {id: 2, nome: "Jéssica", habilitado: false},
     {id: 3, nome: "Renan", habilitado: true},
     {id: 4, nome: "Marlon", habilitado: false},
-    {id: 5, nome: "Ana", habilitado: false}
+    {id: 5, nome: "Ana", habilitado: false},
 ];
 
-let contador = 0;
 let encontrouHabilitado = false;
 
-while ( contador < funcionarios.length ) {
+for ( let contador = 0; contador < funcionarios.length; contador++ ) {
 
     let funcionario = funcionarios[contador];
 
@@ -19,7 +18,6 @@ while ( contador < funcionarios.length ) {
         break;
     }
 
-    contador++;
 }
 
 if (!encontrouHabilitado) {

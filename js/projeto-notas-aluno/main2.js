@@ -1,5 +1,4 @@
-// Aqui o CONTINUE é usado para pausar aquele aluno e continuar a verificar os proximos alunos
-// O break pausa de vez e sai do bloco while
+//Estrutura for com continue
 
 let alunos = [
     {id: 1, nome: "Bruna", media: 8},
@@ -7,37 +6,34 @@ let alunos = [
     {id: 3, nome: "José", media: 5},
     {id: 4, nome: "Guilherme", media: 4},
     {id: 5, nome: "Rafael", media: 10},
-];
-
-let contador = 0;
-
-while ( contador < alunos.length ) {
-
+   ];
+ 
+   for ( let contador = 0; contador < alunos.length; contador++ ) {
+ 
     let aluno = alunos[contador];
-
-    contador++;
-
+ 
     if ( aluno.media < 6 ) {
-        continue;
+    continue;
     }
-
+ 
     console.log("Id: " + aluno.id);
     console.log("Nome: " + aluno.nome);
     console.log("Média: " + aluno.media);
     console.log("\n");
-
-}
-
-// Id: 1
-// Nome: Bruna
-// Média: 8
-
-
-// Id: 2
-// Nome: Laura
-// Média: 7
-
-
-// Id: 5
-// Nome: Rafael
-// Média: 10
+ 
+   }
+ 
+ 
+   // Id: 1
+   // Nome: Bruna
+   // Média: 8
+ 
+ 
+   // Id: 2
+   // Nome: Laura
+   // Média: 7
+ 
+ 
+   // Id: 5
+   // Nome: Rafael
+   // Média: 10
