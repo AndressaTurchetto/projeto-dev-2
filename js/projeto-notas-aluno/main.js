@@ -1,3 +1,6 @@
+// Aqui o CONTINUE é usado para pausar aquele aluno e continuar a verificar os proximos alunos
+// O break pausa de vez e sai do bloco while
+
 let alunos = [
     {id: 1, nome: "Bruna", media: 8},
     {id: 2, nome: "Laura", media: 7},
