@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100..900&display=swap');
+
 /* Color and font variables */
 :root {
     --font-color: #464646;
@@ -14,6 +15,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
 }
 
 body {
@@ -22,7 +27,6 @@ body {
     background-color: var(--background-color);
     font-family: var(--font);
     line-height: 1;
-    color: var(--font-color);
     flex-direction: column;
 }
 
