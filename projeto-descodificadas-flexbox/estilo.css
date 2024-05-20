@@ -1,0 +1,117 @@
+:root {
+    --branco: #FFF;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer {
+    background-color:rgb(71, 166, 230);
+    color: var(--branco);
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    box-shadow: inset -5px  -12px 5px -5px rgba(146, 139, 171, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+    inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158);
+    margin: 0px 250px 0px 250px;
+    box-sizing: border-box;
+    display: flex;
+    height: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 25px;
+    margin: 20px;
+    background-color: rgb(114, 184, 114);
+    margin-bottom: 20px;
+    color: var(--branco);
+    width: calc(100% - 240px); 
+    justify-content: start;
+    margin-left: 250px;
+    border-radius: 10px;
+    box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+    inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); 
+}
+
+main > .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+main > .container > .title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+main > .container > .column {
+    width: calc(25% - 4.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main > .container > .column > .item {
+    background-color: rgb(5, 141, 95);
+    color: var(--branco);
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.158),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+    inset 5px  -12px 5px -5px rgba(16, 15, 15, 0.158); 
+    font-weight: bold;
+}
+
+nav {
+    width: calc(30% - 5px);
+    background-color: red;
+    padding: 10px; 
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-right: 250px;
+    color: var(--branco);
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: inset -5px  -12px 5px -5px rgba(16, 15, 15, 0.458),  inset 0 -4px 8px 4px rgba(16, 15, 15, 0.158),
+    inset 5px  -12px 5px -5px rgba(1, 15, 15, 0.158); 
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar{
+    padding-top: 35px;
+    padding-left: 35px;
+}
