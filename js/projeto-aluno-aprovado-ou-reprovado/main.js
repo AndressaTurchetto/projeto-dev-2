@@ -1,20 +1,32 @@
-let notas_trimestrais = [7, 8, 6, 5];
+import readlineSync from 'readline-sync';
 
-let soma_notas = 0;
-const quantidade_notas = 4;
+function calcularMedia() {
+    let notas = [];
+    const quantidade_notas = 5;
 
-for ( let contador = 0; contador < quantidade_notas; contador++ ) {
+    for (let i = 0; i < quantidade_notas; i++) {
+        let nota = parseFloat(readlineSync.question(`Informe a nota ${i + 1}: `));
+        while (isNaN(nota)) {
+            nota = parseFloat(readlineSync.question(`Entrada inválida. Informe a nota ${i + 1}: `));
+        }
+        notas.push(nota);
+    }
 
-    soma_notas = soma_notas + notas_trimestrais[contador];
+    let soma_notas = 0;
+    for (let i = 0; i < quantidade_notas; i++) {
+        soma_notas += notas[i];
+    }
 
+    let media = soma_notas / quantidade_notas;
+
+    if (media >= 6) {
+        console.log("Aprovado");
+    } else {
+        console.log("Reprovado");
+    }
+
+    console.log(`Média: ${media}`);
 }
 
-let media = soma_notas / quantidade_notas;
+calcularMedia();
 
-if ( media >= 6 ) {
-    console.log("Aprovado");
-} else {
-    console.log("Reprovado");
-}
-
-// Aprovado
