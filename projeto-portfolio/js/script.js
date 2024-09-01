@@ -4,17 +4,14 @@ const email = document.getElementById("email");
 const assunto = document.getElementById("subject");
 const mensagem = document.getElementById("message");
 
-
-/*========TYPED JS========*/
 const typed = new Typed('.multiplos-textos', {
-    strings: ['Desenvolvedora Front-end', 'Programadora'],
+    strings: ['Developer', 'Programmer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
     loop: true
 });
 
-/*========VALIDAÇÃO DO FORMULÁRIO========*/
 function checkInputs () {
     const items = document.querySelectorAll('.item');
 
@@ -67,10 +64,8 @@ form.addEventListener("submit", (e) => {
     checkInputs();
 
     if (!nome.classList.contains("error") && !email.classList.contains("error") && !assunto.classList.contains("error") && !mensagem.classList.contains("error")) {
-        //console.log("Ok");
         alert("Enviado com sucesso!");
 
-        //reseta formulário ao enviar os dados
         form.reset();
         return false;
     }
